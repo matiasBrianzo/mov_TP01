@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void registrarBroadcast() {
         this.ba = new AirplaneModeReceiver();
-        registerReceiver(this.ba, new IntentFilter("android.net.wifi.supplicant.CONNECTION_CHANGE"));
+        registerReceiver(this.ba, new IntentFilter("android.intent.action.AIRPLANE_MODE"));
     }
 
     @Override
